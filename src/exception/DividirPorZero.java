@@ -22,11 +22,8 @@ public class DividirPorZero {
 				
 				continua = false;
 				
-			}catch(ArithmeticException er) {
-				System.err.println("o divisor não deve ser nulo...");
-				
-			}catch(InputMismatchException er) {
-				System.err.println("Os números devem ser inteiros");
+			}catch(ArithmeticException | InputMismatchException er) {
+				System.err.println("O valor inserido é inválido!");
 			}finally {
 				s.nextLine();
 				System.out.println("Finally executado...");
