@@ -24,6 +24,7 @@ public class DividirPorZero {
 				
 			}catch(ArithmeticException | InputMismatchException er) {
 				System.err.println("O valor inserido é inválido!");
+				er.printStackTrace();
 			}finally {
 				s.nextLine();
 				System.out.println("Finally executado...");
