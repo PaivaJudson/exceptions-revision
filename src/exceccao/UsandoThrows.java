@@ -7,7 +7,6 @@ public class UsandoThrows {
 	public static void main(String[] args) {
 		
 		System.out.println("informe um valor decimal: ");
-		
 		try {
 			double val = lerNumero();
 			System.out.println("você digitou: "+val);
@@ -15,7 +14,6 @@ public class UsandoThrows {
 			System.out.println("Entrada inválida");
 			e.printStackTrace();
 		}
-		
 	}
 	
 	public static double lerNumero() throws Exception{
