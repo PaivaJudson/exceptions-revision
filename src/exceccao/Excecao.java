@@ -9,7 +9,7 @@ public class Excecao {
 			
 			System.out.println("Antes da exception");
 			
-			vetor[4] = 1;
+			vetor[4] = 1/0;
 			
 			System.out.println("Esse texto não será impresso");
 		}catch(ArrayIndexOutOfBoundsException erro1) {
@@ -17,6 +17,7 @@ public class Excecao {
 		}
 		catch(Throwable erro2) {
 			System.err.println(erro2.getMessage());
+			erro2.printStackTrace();
 		}
 	}
 
