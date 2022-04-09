@@ -13,15 +13,17 @@ public class Main {
 		
 		try {
 			listaContato.adicionar(c3, 0);
-			System.out.println(listaContato.consultarPorNome("Ageu Paiva", 0));
+			listaContato.adicionar(c2, 1);
+			listaContato.adicionar(c1, 3);
+			listaContato.adicionar(c3, 2);
+			listaContato.adicionar(c1, 4);
+	
+			System.out.println(listaContato.consultarPorNome("Ageu Paiva", 3));
 		} catch (AgendaCheiaException e) {
 			System.out.println(e.getMessage());
 		} catch(ContatoNaoExisteException e) {
 			System.out.println(e.getMessage());
 		}
-		
-		
-		
 		
 	}
 

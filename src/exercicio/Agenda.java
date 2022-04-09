@@ -19,7 +19,7 @@ public class Agenda {
 				throw new AgendaCheiaException();
 			}
 		}
-		return false;
+		throw new AgendaCheiaException();
 	}
 
 	public String consultarPorNome(String nome, int posicao) throws ContatoNaoExisteException {
